@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imge/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/csrf-log.css" />
+    <title>Hack The Point</title>
+  </head>
+
+  <body>
+    <!-- Header with Logo & Site Name -->
+    <div class="header">
+      <div class="container d-flex justify-content-between align-items-center">
+        <img src="imge/image2.png" />
+        <div>
+          <div class="nav-bar">
+            <a href="home.html" class="links">Home</a>
+            <a href="my-profile.html" class="links">My Profile</a>
+            <a href="bugs.html" class="links">Bugs</a>
+            <a href="set.html" class="links">Set Security Level</a>
+            <a href="login.html" class="links">Reset</a>
+            <a href="feedback.html" class="links">Feedback</a>
+          </div>
+        </div>
+        <a href="./login.html" class="submit">Login</a>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+
+    <div class="login-container">
+      <div class="login-box d-flex flex-column align-items-start">
+        <h2 class="align-self-center">My Account</h2>
+        <p>Your Username Is :</p> 
+        <form action="home.html" class="form">
+          <span class="input-span">
+            <label for="email" class="label">Email</label>
+            <input type="email" name="email" id="email" required
+          /></span>
+          <input class="submit" type="submit" value="Update Email" />
+          <span class="input-span">
+            <label for="password" class="label">Password</label>
+            <input type="password" name="password" id="password" required
+          /></span>
+          <span class="input-span">
+            <label for="password" class="label">Confirm Password</label>
+            <input type="password" name="password" id="password" required
+          /></span>
+          <input class="submit" type="submit" value="Update Password" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Font Awesome (for icons) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="JS/all.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
