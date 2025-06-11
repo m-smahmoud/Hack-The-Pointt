@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bg-light: lightgray;
+  --bg-dark: #707070;
+  --clr: #00ff88;
+  --clr-alpha: #9c9c9c60;
+}
+
+body {
+  background-color: #212121;
+}
+
+.header {
+  background-color: #212121;
+  color: lightgray;
+  padding: 15px;
+border-bottom: 2px solid #00ff88;
+img{
+  width: 130px;
+  height: 44px;
+  object-fit: contain;
+}
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.nav-bar {
+  background-color: #212121;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar .links {
+  display: flex;
+  text-align: center;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 3rem;
+  color: var(--bg-light);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav-bar .links:hover {
+  color: var(--clr);
+}
+
+.submit {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size:20px;
+}
+
+.submit:hover {
+  background-color: var(--clr);
+  color: var(--bg-dark);
+}
+
+.about-section {
+  background-color: #212121;
+  padding: 80px 30px 0px 30px;
+}
+
+.about-section h2 {
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.about-section a{
+  color: lightgray;
+  font-size: 20px;
+  font-weight: 500;
+}
+.list{
+  list-style: none;
+  padding: 0;
+}
+
+.list-child ul{
+  display: none;
+  list-style: none;
+}
+.list-child:hover ul {
+  display: block;
+
+}
+
+
+/* From Uiverse.io by ElSombrero2 */ 
+.card {
+  width: 190px;
+  height: 254px;
+  background: #58bc82;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 3px 1px #00000088;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.card:hover{
+background: #212121;
+}
+a {
+  color: lightgray;
+  text-decoration: none;
+  display: block;
+}
+a:hover {
+  color: #00ff88;
+}
+
+.card .content {
+  border-radius: 5px;
+  background: #212121;
+  width: 186px;
+  height: 250px;
+  z-index: 1;
+  padding: 20px;
+  color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: " ";
+  display: block;
+  background: white;
+  width: 5px;
+  height: 50px;
+  position: absolute;
+  filter: blur(50px);
+  overflow: hidden;
+}
+
+.card:hover .content::before {
+  opacity: 1;
+}
+
+.card::before {
+  opacity: 1;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 300px;
+  transform: rotate(0deg) translateY(50%);
+  background: linear-gradient(90deg, #58bc82, transparent);
+  transition: opacity 300ms;
+  animation: rotation_9018 3000ms infinite linear;
+  animation-play-state: paused;
+}
+
+.card:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+.card:hover::after {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+
+.card::after {
+  opacity: 1;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 300px;
+  transform: rotate(0deg) translateY(-50%);
+  background: linear-gradient(90deg, transparent, #58bc82);
+  transition: opacity 300ms;
+  animation: rotation_9019 3000ms infinite linear;
+  animation-play-state: paused;
+}
+
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg) translateY(50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(50%);
+  }
+}
+@keyframes rotation_9019 {
+  0% {
+    transform: rotate(0deg) translateY(-50%);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(-50%);
+  }
+}
+
+.active{
+  color: #00ff88!important;
+}

@@ -1,0 +1,3 @@
+Name: User Two
+Email: user2@example.com
+Role: Student

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bg-light: lightgray;
+  --bg-dark: #707070;
+  --clr: #00ff88;
+  --clr-alpha: #9c9c9c60;
+}
+
+body {
+  background-color: #212121;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  background-color: #212121;
+  color: lightgray;
+  padding: 15px 0;
+  border-bottom: 2px solid #00ff88;
+}
+
+.header img {
+  width: 130px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.nav-bar .links {
+  font-size: 20px;
+  color: lightgray;
+  font-weight: 600;
+  text-decoration: none;
+  padding:10px 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-bar .links:hover,
+.nav-bar .links.active {
+  color: #00ff88;
+}
+
+.submit {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.submit:hover {
+  background-color: var(--clr);
+  color: var(--bg-dark);
+}
+
+.about-section {
+  background-color: #212121;
+  padding: 80px 30px 0px 30px;
+}
+
+.about-section h2 {
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.about-section p {
+ color: lightgray;
+  font-size: 2rem;  /* تكبير حجم النص */
+  font-weight: 550;
+  line-height: 1.8; /* زيادة المسافة بين الأسطر */
+  max-width: 1000px; /* توسيع النص ليغطي مساحة أكبر */
+  margin: 0 auto; /* محاذاة النص في المنتصف */
+  padding-top: 20px; /* إضافة مسافة من أعلى */
+  padding-bottom: 20px; /* إضافة مسافة من أسفل */
+  text-align: justify; /* جعل النص مبرر */
+  max-width: 1200px;
+  margin: auto;
+  line-height: 1.5; /* زيادة المسافة بين الأسطر */
+}
